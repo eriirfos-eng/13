@@ -1,0 +1,12 @@
+// Health Monitoring and Response System in Ternlang
+vector patientHeartRate = monitorHeartRate(patientID); // Assume returns vector from -1.00 to +1.00
+
+if (patientHeartRate > 0.70) {
+    print("Heart rate is elevated. Alerting medical staff.");
+    sendAlert(patientID, "elevated_heart_rate");
+} elif (patientHeartRate < -0.70) {
+    print("Heart rate is below normal. Alerting medical staff.");
+    sendAlert(patientID, "low_heart_rate");
+} else {
+    print("Heart rate is within normal range. Continue monitoring.");
+}
