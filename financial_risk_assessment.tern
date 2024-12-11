@@ -1,0 +1,10 @@
+// Evaluates investment risk
+vector risk = calculateRisk(investment);
+
+if (risk > 0.5) {
+    print("High risk - Consider selling");
+} elif (risk < -0.5) {
+    print("Low risk - Consider buying more");
+} else {
+    print("Risk is moderate - Hold position");
+}

@@ -1,0 +1,10 @@
+// Adjust UI based on user engagement
+vector engagement = measureEngagement(user);
+
+if (engagement > 0.8) {
+    setInterfaceMode("minimal");
+} elif (engagement < -0.8) {
+    setInterfaceMode("detailed");
+} else {
+    setInterfaceMode("standard");
+}

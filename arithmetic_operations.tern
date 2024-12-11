@@ -1,0 +1,12 @@
+// Adds two numbers and evaluates the neutrality of the result
+vector a = 0.5;
+vector b = 0.3;
+vector result = add(a, b);
+
+if (result > 0.7) {
+    print("Result is significantly positive");
+} elif (result < -0.7) {
+    print("Result is significantly negative");
+} else {
+    print("Result is neutral");
+}
