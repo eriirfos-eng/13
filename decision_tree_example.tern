@@ -1,0 +1,12 @@
+// Assuming vector temp can range from -1.00 to +1.00
+if (temp > 0.50) {
+    print("High Positive");
+} elif (temp > 0.10) {
+    print("Low Positive");
+} elif (temp > -0.10) {
+    print("Neutral");
+} elif (temp > -0.50) {
+    print("Low Negative");
+} else {
+    print("High Negative");
+}
