@@ -1,0 +1,11 @@
+function openFile(string path) {
+  return open(path, 'r'); // Assuming `open` is a built-in function
+}
+
+function readFile(file f) {
+  return f.read(); // Assuming `read` is a method of file objects
+}
+
+function closeFile(file f) {
+  f.close(); // Assuming `close` is a method of file objects
+}

@@ -1,0 +1,7 @@
+function add(vector a, vector b) {
+  return a + b;
+}
+
+function subtract(vector a, vector b) {
+  return a - b;
+}

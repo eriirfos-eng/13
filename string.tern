@@ -1,0 +1,7 @@
+function concat(string a, string b) {
+  return a + b;
+}
+
+function length(string a) {
+  return len(a); // Assuming `len` is a built-in function
+}
