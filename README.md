@@ -1,3 +1,33 @@
+import os
+from openai import OpenAI
+
+token = os.environ["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"]
+endpoint = "https://models.github.ai/inference"
+model = "openai/gpt-5"
+
+client = OpenAI(
+    base_url=endpoint,
+    api_key=token,
+)
+
+response = client.chat.completions.create(
+    messages=[
+        {
+            "role": "system",
+            "content": "You are a helpful assistant.",
+        },
+        {
+            "role": "user",
+            "content": "What is the capital of France?",
+        }
+    ],
+    model=model
+)
+
+print(response.choices[0].message.content)
+
+
+
 # ternlang
 Ternlang revolutionizes programming paradigms with its vector-based ternary logic system, transcending traditional binary constraints to offer dynamic, adaptive decision-making. Ideal for developers, researchers, and innovators, Ternlang facilitates nuanced and precise computational solutions across AI, finance, and human-machine interaction.
 
