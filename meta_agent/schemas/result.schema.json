@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MetaAgent Result",
+  "type": "object",
+  "properties": {
+    "ternary": {
+      "type": "integer",
+      "enum": [
+        -1,
+        0,
+        1
+      ]
+    },
+    "risk": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "secure": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "uncertainty": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "fused": {
+      "type": "object"
+    },
+    "pmp_state": {
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "WARNED",
+        "LOCKED"
+      ]
+    }
+  },
+  "required": [
+    "ternary",
+    "risk",
+    "secure",
+    "uncertainty",
+    "fused",
+    "pmp_state"
+  ]
+}
